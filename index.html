@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM selection with D3</title>
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+</head>
+<body>
+    <h1>Welcome to D3 DOM selection Playground</h1>
+    
+    <div>Lorem ipsum dolor sit amet.</div>
+    <ul></ul>
+
+    
+    <h2>A bit about this</h2>
+    <div>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Deserunt, quaerat.</p>
+
+        <p>Iste minima dolorem vitae, mollitia 
+            dignissimos culpa omnis dolore facere.</p>
+    </div>
+
+    <div>
+        <h3>Lorem, ipsum dolor.</h3>
+        
+        <p>Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Deserunt, quaerat.</p>
+
+        <p>Iste minima dolorem vitae, mollitia 
+            dignissimos culpa omnis dolore facere.</p>
+    </div>
+
+    <script>
+        var fruits = ['apple', 'mango', 'banana', 'orange'];
+        d3.select('ul')
+            .selectAll('li')
+            .data(fruits)
+            .enter()
+            .append('li')
+            .text(function(d) { return d; });
+    </script>
+
+    <script>
+        d3.select('h3').style('color', 'darkblue');
+        d3.select('h3').style('font-size', '24px');
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "visual-rep-with-d3-js-lib",
+  "version": "1.0.0",
+  "description": "A few examples of html tag manipulation and data visualizations with D3 lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc",
+    "lint": "eslint ./src/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^29.5.12",
+    "eslint": "^8.57.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
+  }
+}
